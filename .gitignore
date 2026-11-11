@@ -1,0 +1,17 @@
+# Dépendances et build
+node_modules/
+dist/
+
+# Photos de référence : images trouvées en ligne (banques d'images, filigranes),
+# droits non acquis. À garder en local, ne pas publier.
+Photo/
+
+# Archives brutes Quaternius (54 Mo). Les fichiers utiles, déjà préparés,
+# sont dans app/public/models. Pour les régénérer : retélécharger les packs
+# (voir assets/personnages/README.md) puis lancer prepare.mjs.
+assets/personnages/base/
+assets/personnages/animations/
+
+# Système
+.DS_Store
+Thumbs.db

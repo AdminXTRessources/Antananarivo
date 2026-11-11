@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Antananarivo · Analakely 1950 / 2050</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <canvas id="scene"></canvas>
+
+  <header id="bar">
+    <div class="brand">
+      <strong>Antananarivo</strong>
+      <span>Analakely · <b id="eraLabel">2050</b></span>
+    </div>
+    <div class="group" data-group="era" aria-label="Époque">
+      <button data-era="1950">1950</button>
+      <button data-era="2050" class="on">2050</button>
+    </div>
+    <div class="group" data-group="mode" aria-label="Mode">
+      <button data-mode="manual" class="on">Manuel</button>
+      <button data-mode="tour">Découverte</button>
+      <button data-mode="random">Aléatoire</button>
+    </div>
+    <div class="group" data-group="speed" aria-label="Vitesse">
+      <button data-speed="1" class="on">×1</button>
+      <button data-speed="2">×2</button>
+      <button data-speed="3">×3</button>
+    </div>
+    <div class="group" aria-label="Hauteur">
+      <button id="btnWalk">Piéton</button>
+      <button id="btnAir">Aérien</button>
+    </div>
+  </header>
+
+  <aside id="info" hidden>
+    <h2 id="infoTitle"></h2>
+    <p id="infoText"></p>
+  </aside>
+
+  <footer id="status">
+    <span id="alt">Altitude 0 m</span>
+    <span id="hint">Flèches : avancer et tourner · Espace / Maj : monter et descendre · Glisser la souris : regarder</span>
+    <span id="credits">Plan : © contributeurs OpenStreetMap · Personnages : Quaternius (CC0)</span>
+  </footer>
+
+  <div id="touch">
+    <div id="stick"><div id="knob"></div></div>
+    <div id="updown">
+      <button id="tUp" aria-label="Monter">▲</button>
+      <button id="tDown" aria-label="Descendre">▼</button>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
